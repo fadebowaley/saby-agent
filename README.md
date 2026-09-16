@@ -53,6 +53,21 @@ macOS (arm64) uses `saby-agent-darwin-arm64.tar.gz`, Linux arm64 uses
 
 Each release's checksums live in `saby-agent-SHA256SUMS.txt`.
 
+## Uninstall
+
+To remove the agent, its CLI symlinks, and the PATH entry:
+
+```sh
+saby-agent-uninstall
+```
+
+This leaves `~/.saby` (auth, env, logs) in place. Pass `--purge` to remove
+that too:
+
+```sh
+saby-agent-uninstall --purge
+```
+
 ## Releases
 
 New versions are published as GitHub releases with four stable assets;
